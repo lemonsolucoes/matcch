@@ -25,28 +25,6 @@ function App() {
     );
   };
 
-
-
-  const App = () => {
-    const handleSearch = (query) => {
-      console.log(`Realizando a pesquisa: ${query}`);
-      // Adicione a lógica de pesquisa aqui
-    };
-  
-    return (
-      <div className="app">
-        <h1>Meu Aplicativo</h1>
-        <Searchbar onSearch={handleSearch} />
-      </div>
-    );
-  };
-  
-
-
-
-
-
-
   const router = createBrowserRouter([
     {
       path: "/",
