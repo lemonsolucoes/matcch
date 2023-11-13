@@ -28,10 +28,10 @@ function Gigs() {
         </p>
         <div className="menu">
           <div className="left">
-            <span>Budget</span>
+            <span>Teste</span>
             <input ref={minRef} type="number" placeholder="min" />
             <input ref={maxRef} type="number" placeholder="max" />
-            <button onClick={apply}>Apply</button>
+            <button onClick={apply}>Aplicar</button>
           </div>
           <div className="right">
             <span className="sortBy">Ordernar por:</span>
@@ -42,11 +42,11 @@ function Gigs() {
             {open && (
               <div className="rightMenu">
                 {sort === "sales" ? (
-                  <span onClick={() => reSort("createdAt")}>Newest</span>
+                  <span onClick={() => reSort("createdAt")}>Teste</span>
                 ) : (
-                  <span onClick={() => reSort("sales")}>Best Selling</span>
+                  <span onClick={() => reSort("sales")}>Teste</span>
                   )}
-                  <span onClick={() => reSort("sales")}>Popular</span>
+                  <span onClick={() => reSort("sales")}>Teste</span>
               </div>
             )}
           </div>

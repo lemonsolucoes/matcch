@@ -44,7 +44,7 @@ function Navbar() {
             </div>
             <button>Buscar</button>
           </div>
-          <span>English</span>
+          <span>Ver lista de professores</span>
           {!currentUser?.isSeller && <span>Become a Seller</span>}
           {currentUser ? (
             <div className="user" onClick={()=>setOpen(!open)}>
@@ -90,22 +90,22 @@ function Navbar() {
           <hr />
           <div className="menu">
             <Link className="link menuLink" to="/">
-              Graphics & Design
+              Design Gráfico
             </Link>
             <Link className="link menuLink" to="/">
-              Video & Animation
+              Video & Animação
             </Link>
             <Link className="link menuLink" to="/">
-              Writing & Translation
+              Narrativas
             </Link>
             <Link className="link menuLink" to="/">
-              AI Services
+              Inteligência Artificial
             </Link>
             <Link className="link menuLink" to="/">
-              Digital Marketing
+              Desenvolvimento de Sistemas
             </Link>
             <Link className="link menuLink" to="/">
-              Music & Audio
+              Musica & Audio
             </Link>
             <Link className="link menuLink" to="/">
               Programming & Tech

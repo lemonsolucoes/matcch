@@ -23,35 +23,30 @@ function Footer() {
             <span>Contato</span>
           </div>
           <div className="item">
-            <h2>Support</h2>
+            <h2>Suportet</h2>
             <span>Help & Support</span>
             <span>Trust & Safety</span>
     
           </div>
           <div className="item">
-            <h2>Community</h2>
+            <h2>Teste</h2>
             <span>Customer Success Stories</span>
             <span>Community hub</span>
             <span>Forum</span>
             <span>Events</span>
             <span>Blog</span>
-            <span>Influencers</span>
-            <span>Affiliates</span>
-            <span>Podcast</span>
             <span>Invite a Friend</span>
             <span>Become a Seller</span>
             <span>Community Standards</span>
           </div>
           <div className="item">
-            <h2>More From matcch</h2>
+            <h2>Mais sobre matcch</h2>
             <span>Business</span>
             <span> Pro</span>
             <span>Logo Maker</span>
             <span>Guides</span>
             <span>Get Inspired</span>
             <span> Select</span>
-            <span>ClearVoice</span>
-            <span>Workspace</span>
             <span>Learn</span>
             <span>Working Not Working</span>
           </div>
