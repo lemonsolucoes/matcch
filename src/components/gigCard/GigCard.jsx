@@ -13,22 +13,19 @@ const GigCard = ({ item }) => {
             <span>{item.username}</span>
           </div>
           <p>{item.desc}</p>
+    
           <span>Trilhas:</span>
           <p>{item.category}</p>
+          <hr />
           <span>Áreas de interesse:</span>
           <p>{item.area}</p>
+          <hr />
           <span>Modalidades:</span>
           <p>{item.modalidade}</p>
-          <div className="star">
-            <img src="./img/star.png" alt="" />
-            <span>{item.star}</span>
-          </div>
-        </div>
-        <hr />
-        <div className="detail">
-          <img src="./img/heart.png" alt="" />
           
         </div>
+        
+        
       </div>
     </Link>
   );
