@@ -3,9 +3,12 @@
   display: flex;
   justify-content: center;
 
+.tcc {
+  color: #DD7A96;
+}
   .container {
-    width: 1400px;
-    padding: 30px 0px;
+    width:99%;
+    padding: 50px 0px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -31,6 +34,7 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 20px;
+      margin-top: 20px;
 
       .left {
         display: flex;
@@ -105,7 +109,7 @@
 
     .cards {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-wrap: wrap;
     }
   }

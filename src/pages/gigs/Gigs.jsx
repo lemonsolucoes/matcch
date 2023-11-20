@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import "./Gigs.scss";
 import { gigs } from "../../data";
 import GigCard from "../../components/gigCard/GigCard";
+import MultiFilters from "../../MultiFilters";
 
 function Gigs() {
   const [sort, setSort] = useState("sales");
@@ -22,40 +23,22 @@ function Gigs() {
   return (
     <div className="gigs">
       <div className="container">
-       <center> <h1>Qual é o matcch ideal para o seu TCC?</h1></center>
-        <p>
-          Filtre por:
-        </p>
+       <center> <h1>Qual é o ma<span className="tcc">tcc</span>h ideal para o seu TCC?</h1></center>
+        
+
+
+
         <div className="menu">
-          <div className="left">
-            <span>Teste</span>
-            <input ref={minRef} type="number" placeholder="min" />
-            <input ref={maxRef} type="number" placeholder="max" />
-            <button onClick={apply}>Aplicar</button>
-          </div>
-          <div className="right">
-            <span className="sortBy">Ordernar por:</span>
-            <span className="sortType">
-              {sort === "sales" ? "Best Selling" : "Newest"}
-            </span>
-            <img src="./img/down.png" alt="" onClick={() => setOpen(!open)} />
-            {open && (
-              <div className="rightMenu">
-                {sort === "sales" ? (
-                  <span onClick={() => reSort("createdAt")}>Teste</span>
-                ) : (
-                  <span onClick={() => reSort("sales")}>Teste</span>
-                  )}
-                  <span onClick={() => reSort("sales")}>Teste</span>
-              </div>
-            )}
-          </div>
+        <div className="App">
+       <center><p>
+          Filtre por trilhas:
+        </p></center>
+      <MultiFilters />
+      
+    </div>
+
         </div>
-        <div className="cards">
-          {gigs.map((gig) => (
-            <GigCard key={gig.id} item={gig} />
-          ))}
-        </div>
+       
       </div>
     </div>
   );

@@ -1,9 +1,16 @@
 .gigCard {
   width: 400px;
-  height: 500px;
-  // border: 1px solid rgb(237, 236, 236);
-  border: 1px solid rgb(228, 228, 228);
+  height: 450px;
+  background-color: white;
+  border-radius: 15px;
+  border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-right: 2px solid #000;
+    border-bottom: 3px solid #000;
   margin-bottom: 40px;
+  span {
+    font-weight: 600;
+  }
 
   img {
     width: 100%;
@@ -12,7 +19,7 @@
   }
 
   .info {
-    padding: 10px 20px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -30,6 +37,7 @@
       }
 
       span {
+        font-weight: 700;
       }
     }
 

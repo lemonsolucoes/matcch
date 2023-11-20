@@ -116,6 +116,9 @@ export const gigs = [
     desc: "I will create ai art character from your images and prompts",
     price: 59,
     star: 5,
+    category: "Design",
+    area: "Animação",
+    modalidade: "monografia",
     username: "Anna Bell",
   },
   {
@@ -125,6 +128,9 @@ export const gigs = [
     desc: "I will create ultra high quality character art with ai",
     price: 79,
     star: 5,
+    category: "Animação",
+    area: "realidade virtual",
+    modalidade: "monografia",
     username: "Lannie Coleman",
   },
   {
@@ -134,6 +140,9 @@ export const gigs = [
     desc: "I will creating unique ai generated artworks mid journey ai artist",
     price: 112,
     star: 5,
+    category: "Sistemas",
+    area: "realidade virtual",
+    modalidade: "monografia",
     username: "Carol Steve",
   },
   {
@@ -143,6 +152,9 @@ export const gigs = [
     desc: "I will create custom ai generated artwork using your photos",
     price: 99,
     star: 4,
+    category: ["Sistemas", "Jogos"],
+    area: "realidade virtual",
+    modalidade: "monografia",
     username: "Don Weber",
   },
   {
@@ -152,6 +164,9 @@ export const gigs = [
     desc: "I will recreate your dreams in high quality pictures",
     price: 59,
     star: 5,
+    category: ["Audiovisual", "Jogos"],
+    area: "animação",
+    modalidade: "monografia",
     username: "Audrey Richards",
   },
   {
@@ -161,6 +176,8 @@ export const gigs = [
     desc: "I will create ai digital art illustration hyper realistic painting",
     price: 79,
     star: 4,
+    category: ["Audiovisual", "Sistemas"],
+    modalidade: "monografia",
     username: "Walton Shepard ",
   },
   {
@@ -170,6 +187,8 @@ export const gigs = [
     desc: "I will generate images with your prompts using ai dalle",
     price: 89,
     star: 5,
+    category: "Sistemas",
+    modalidade: "monografia",
     username: "Waverly Schaefer",
   },
   {
@@ -179,6 +198,8 @@ export const gigs = [
     desc: "I will create custom art using midjourney generator",
     price: 110,
     star: 4,
+    category: "Jogos",
+    modalidade: "monografia",
     username: "Wilton Hunt",
   },
 ];

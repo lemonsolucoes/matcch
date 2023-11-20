@@ -32,9 +32,8 @@ function Navbar() {
       <div className="container">
         <div className="logo">
           <Link className="link" to="/">
-            <span className="text">matcch</span>
+<img src="./img/matcch-logo-png.png" alt="" width="150" height="30"></img>
           </Link>
-          <span className="dot">.</span>
         </div>
         <div className="links">
           <div className="search">
@@ -42,7 +41,7 @@ function Navbar() {
               <img src="./img/search.png" alt="" width="18" height="18" style={{margin:"10px"}}/>
               <input type="text" placeholder='O que você busca para o seu TCC?' />
             </div>
-            <button>Buscar</button>
+          
           </div>
           <span>Ver lista de professores</span>
           {!currentUser?.isSeller && <span>Become a Seller</span>}
@@ -113,9 +112,7 @@ function Navbar() {
             <Link className="link menuLink" to="/">
               Business
             </Link>
-            <Link className="link menuLink" to="/">
-              Lifestyle
-            </Link>
+        
           </div>
           <hr />
         </>
