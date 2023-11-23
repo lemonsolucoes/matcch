@@ -29,16 +29,19 @@ function Gigs() {
 
     
 
-        <div className="menu">
+        
         <div className="App">
        <center><p>
-          Filtre por trilhas:
+          Filtre por:
         </p></center>
       <MultiFilters />
-      
+
     </div>
 
-        </div>
+   
+    
+
+        
        
       </div>
     </div>

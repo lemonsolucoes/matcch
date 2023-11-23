@@ -43,7 +43,7 @@ function Navbar() {
             </div>
           
           </div>
-          <span>Ver lista de professores</span>
+      
           {!currentUser?.isSeller && <span>Become a Seller</span>}
           {currentUser ? (
             <div className="user" onClick={()=>setOpen(!open)}>
@@ -84,39 +84,11 @@ function Navbar() {
           )}
         </div>
       </div>
-      {(active || pathname !== "/") && (
-        <>
-          <hr />
-          <div className="menu">
-            <Link className="link menuLink" to="/">
-              Design Gráfico
-            </Link>
-            <Link className="link menuLink" to="/">
-              Video & Animação
-            </Link>
-            <Link className="link menuLink" to="/">
-              Narrativas
-            </Link>
-            <Link className="link menuLink" to="/">
-              Inteligência Artificial
-            </Link>
-            <Link className="link menuLink" to="/">
-              Desenvolvimento de Sistemas
-            </Link>
-            <Link className="link menuLink" to="/">
-              Musica & Audio
-            </Link>
-            <Link className="link menuLink" to="/">
-              Programming & Tech
-            </Link>
-            <Link className="link menuLink" to="/">
-              Business
-            </Link>
-        
-          </div>
-          <hr />
-        </>
-      )}
+      
+
+
+
+      
     </div>
   );
 }

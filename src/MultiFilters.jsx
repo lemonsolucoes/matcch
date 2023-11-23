@@ -4,50 +4,104 @@ import "./pages/gigs/Gigs.scss";
 import GigCard from "./components/gigCard/GigCard";
 import "./multifilters.scss";
 
-
 export default function MultiFilters() {
-  const [selectedFilters, setSelectedFilters] = useState([]);
+  const [selectedCategoryFilters, setSelectedCategoryFilters] = useState([]);
+  const [selectedAreaFilters, setSelectedAreaFilters] = useState([]);
+  const [selectedModalidadeFilters, setSelectedModalidadeFilters] = useState([]);
   const [filteredGigs, setFilteredGigs] = useState(gigs);
 
-  let filters = ["Design", "Sistemas", "Jogos", "Audiovisual"];
+  let categoryFilters = ["Design", "Sistemas", "Jogos", "Audiovisual"];
+  let areaFilters = ["Realidade Virtual", "Educação", "Animação", "UX", "Cinema", "Ilustração"]; // Substitua com suas áreas reais
+  let modalidadeFilters = ["Monografia", "Artigo", "Relatorio Tecnico"];
 
-  const handleFilterButtonClick = (selectedCategory) => {
-    if (selectedFilters.includes(selectedCategory)) {
-      let filters = selectedFilters.filter((el) => el !== selectedCategory);
-      setSelectedFilters(filters);
-    } else {
-      setSelectedFilters([...selectedFilters, selectedCategory]);
+  const handleFilterButtonClick = (filter, filterType) => {
+    if (filterType === "category") {
+      const selectedFilters = selectedCategoryFilters.includes(filter)
+        ? selectedCategoryFilters.filter((el) => el !== filter)
+        : [...selectedCategoryFilters, filter];
+
+      setSelectedCategoryFilters(selectedFilters);
+    } else if (filterType === "area") {
+      const selectedFilters = selectedAreaFilters.includes(filter)
+        ? selectedAreaFilters.filter((el) => el !== filter)
+        : [...selectedAreaFilters, filter];
+
+      setSelectedAreaFilters(selectedFilters);
+    } else if (filterType === "modalidade") {
+      const selectedFilters = selectedModalidadeFilters.includes(filter)
+        ? selectedModalidadeFilters.filter((el) => el !== filter)
+        : [...selectedModalidadeFilters, filter];
+
+      setSelectedModalidadeFilters(selectedFilters);
     }
   };
 
   useEffect(() => {
     filterGigs();
-  }, [selectedFilters]);
+  }, [selectedCategoryFilters, selectedAreaFilters,selectedModalidadeFilters]);
 
   const filterGigs = () => {
-    if (selectedFilters.length > 0) {
-      let tempGigs = selectedFilters.map((selectedCategory) => {
-        let temp = gigs.filter((gig) => gig.category === selectedCategory);
-        return temp;
-      });
-      setFilteredGigs(tempGigs.flat());
-    } else {
-      setFilteredGigs([...gigs]);
+    let tempGigs = gigs;
+
+    if (selectedCategoryFilters.length > 0) {
+      tempGigs = tempGigs.filter((gig) =>
+        selectedCategoryFilters.includes(gig.category)
+      );
     }
+
+    if (selectedAreaFilters.length > 0) {
+      tempGigs = tempGigs.filter((gig) =>
+        selectedAreaFilters.includes(gig.area)
+      );
+    }
+
+    if (selectedModalidadeFilters.length > 0) {
+      tempGigs = tempGigs.filter((gig) =>
+        selectedModalidadeFilters.includes(gig.modalidade)
+      );
+    }
+
+    setFilteredGigs(tempGigs);
   };
 
   return (
     <div>
       <div className="filter-buttons-container">
-        {filters.map((category, idx) => (
+      <p>Trilhas: </p>
+        {categoryFilters.map((category, idx) => (
           <button
-            onClick={() => handleFilterButtonClick(category)}
+            onClick={() => handleFilterButtonClick(category, "category")}
             className={`filter-button ${
-              selectedFilters?.includes(category) ? "active" : ""
+              selectedCategoryFilters?.includes(category) ? "active" : ""
             }`}
-            key={`filters-${idx}`}
+            key={`category-filters-${idx}`}
           >
             {category}
+          </button>
+        ))}
+ <p>Áreas de interesse: </p>
+        {areaFilters.map((area, idx) => (
+          <button
+            onClick={() => handleFilterButtonClick(area, "area")}
+            className={`filter-button ${
+              selectedAreaFilters?.includes(area) ? "active" : ""
+            }`}
+            key={`area-filters-${idx}`}
+          >
+            {area}
+          </button>
+        ))}
+
+<p>Modalidade: </p>
+        {modalidadeFilters.map((modalidade, idx) => (
+          <button
+            onClick={() => handleFilterButtonClick(modalidade, "modalidade")}
+            className={`filter-button ${
+              selectedModalidadeFilters?.includes(modalidade) ? "active" : ""
+            }`}
+            key={`modalidade-filters-${idx}`}
+          >
+            {modalidade}
           </button>
         ))}
       </div>
