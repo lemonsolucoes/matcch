@@ -33,17 +33,17 @@ function Gig() {
             
                 <div className="item">
                   <span className="title">Áreas de Interesse</span>
-                  <span className="desc">1 day</span>
+                  <span className="desc">Animação</span>
                 </div>
                 <div className="item">
                   <span className="title">Preferência de modalidade de TCC:</span>
-                  <span className="desc">English</span>
+                  <span className="desc">Monografia</span>
                 </div>
               </div>
               
              
-
-              <button>Solicitar Orientação para TCC</button>
+<center>
+              <button>Solicitar Orientação para TCC</button></center>
             </div>
           </div>
          
@@ -55,39 +55,16 @@ function Gig() {
             <h3>A beleza está no olho de quem vê: Um relato de experiência sobre a avaliação de estética de um design system para HUDs em jogos sérios EUD. 2023.</h3>
           
           </div>
-          <p>
-            I will create a unique high quality AI generated image based on a
-            description that you give me
-          </p>
+        
           <div className="details">
             <div className="item">
               <img src="/img/clock.png" alt="" />
-              <span>2 Days Delivery</span>
+              <span>Autor: Mariana Bernardino Muri.</span>
             </div>
-            <div className="item">
-              <img src="/img/recycle.png" alt="" />
-              <span>3 Revisions</span>
-            </div>
+            
           </div>
-          <div className="features">
-            <div className="item">
-              <img src="/img/greencheck.png" alt="" />
-              <span>Prompt writing</span>
-            </div>
-            <div className="item">
-              <img src="/img/greencheck.png" alt="" />
-              <span>Artwork delivery</span>
-            </div>
-            <div className="item">
-              <img src="/img/greencheck.png" alt="" />
-              <span>Image upscaling</span>
-            </div>
-            <div className="item">
-              <img src="/img/greencheck.png" alt="" />
-              <span>Additional design</span>
-            </div>
-          </div>
-          <button>Continue</button>
+         
+          
         </div>
       </div>
     </div>
