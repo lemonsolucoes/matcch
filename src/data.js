@@ -111,15 +111,15 @@ export const projects = [
 export const gigs = [
   {
     id: 1,
-    img: "https://images.pexels.com/photos/580151/pexels-photo-580151.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    pp: "https://images.pexels.com/photos/720598/pexels-photo-720598.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    desc: "I will create ai art character from your images and prompts",
+    img: "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4755105U6",
+    pp: "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4755105U6",
+    desc: "Expert em produção audiovisual, análise fílmica e avaliação educacional. Professor de Sistemas de Mídias Digitais na UFC, coordenando o LABVIS.",
     price: 59,
     star: 5,
-    category: "Design",
+    category: "Audiovisual",
     area: "Animação",
     modalidade: "monografia",
-    username: "Anna Bell",
+    username: "Adriano Anunciação Oliveira",
   },
   {
     id: 2,

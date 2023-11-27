@@ -1,6 +1,6 @@
 .gigCard {
   width: 400px;
-  height: 470px;
+  height: 500px;
   background-color: white;
   border-radius: 15px;
   border-left: 1px solid #000;
@@ -16,6 +16,9 @@
     width: 100%;
     height: 50%;
     object-fit: cover;
+    -webkit-box-shadow: 1px -1.5px 0 3px #daf88f;
+    -moz-box-shadow: 1px -1.5px 0 3px #daf88f;
+    box-shadow: 1px -1.5px 0 3px #daf88f;
   }
 
   .info {
@@ -42,7 +45,7 @@
     }
 
     p {
-      color: #111;
+      color: #070707;
     }
 
     .star {
@@ -83,7 +86,7 @@
 
     .price {
       span {
-        color: #999;
+        color: #070707;
         font-size: 12px;
       }
 
