@@ -1,0 +1,12 @@
+import db from "#database/client.js";
+
+db.query(
+  `
+	CREATE TABLE IF NOT EXISTS TCC_MODALITY_TEACHER (
+		user_id INT NOT NULL,
+		modality_id INT NOT NULL,
+		CONSTRAINT TCC_MODALITY_TEACHER_ID_FK FOREIGN KEY (user_id) REFERENCES USER(id),
+		CONSTRAINT TEACHER_TCC_MODALITY_FK FOREIGN KEY (modality_id) REFERENCES TCC_MODALITY(id)
+	)
+`,
+);

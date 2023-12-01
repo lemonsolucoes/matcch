@@ -1,0 +1,11 @@
+import "./user.js";
+import "./theme.js";
+import "./theme-teacher.js";
+import "./track.js";
+import "./track-user.js";
+import "./tcc-modality.js";
+import "./tcc-modality-teacher.js";
+import "./student.js";
+import "./teacher.js";
+import "./request.js";
+import "./notification.js";

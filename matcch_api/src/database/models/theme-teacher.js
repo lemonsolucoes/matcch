@@ -1,0 +1,12 @@
+import db from '#database/client.js';
+
+db.query(
+  `
+	CREATE TABLE IF NOT EXISTS THEME_TEACHER (
+		user_id INT NOT NULL,
+		theme_id INT NOT NULL,
+		CONSTRAINT THEME_TEACHER_ID_FK FOREIGN KEY (user_id) REFERENCES USER(id),
+		CONSTRAINT TEACHER_THEME_FK FOREIGN KEY (theme_id) REFERENCES THEME(id)
+	)
+`,
+);
