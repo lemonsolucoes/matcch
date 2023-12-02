@@ -1,5 +1,18 @@
 import db from "#database/client.js";
 
+export async function querySelectRequestById(data) {
+  const { id } = data;
+
+  const [rows] = await db.query(
+    `
+    SELECT * FROM REQUEST
+    WHERE id = ?;
+	`,
+    [id],
+  );
+  return rows;
+}
+
 export async function querySelectAllRequestsBySender(data) {
   const { senderId } = data;
 
