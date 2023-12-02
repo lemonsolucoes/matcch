@@ -4,7 +4,11 @@ import {
   querySelectAllRequestsBySender,
   querySelectAllPendingRequestsToRecipient,
   queryUpdateRequest,
+  querySelectRequestById,
 } from "#database/repositories/request.js";
+import { queryInsertNotification } from "#database/repositories/notification.js";
+import { querySelectUserById } from "#database/repositories/user.js";
+import { messages } from "#messages.js";
 
 /**
  * @param {express.Request} req
@@ -52,6 +56,11 @@ export async function sendRequest(req, res) {
 
   try {
     await queryInsertRequest({ senderId, recipientId });
+    const [student] = await querySelectUserById(senderId);
+    await queryInsertNotification({
+      message: messages.receivedRequest(student.name),
+      recipientId,
+    });
     return res.status(200).end();
   } catch (err) {
     return res.status(400).json(err);
@@ -67,9 +76,14 @@ export async function rejectRequest(req, res) {
   if (!id) return res.status(400).send("id is required");
 
   try {
-    await queryUpdateRequest({
-      id,
-      status: "rejected",
+    await queryUpdateRequest({ id, status: "rejected" });
+    const [request] = await querySelectRequestById({ id });
+    const userId = request.sender_id;
+    const recipientId = request.recipient_id;
+    const [teacher] = await querySelectUserById(recipientId);
+    await queryInsertNotification({
+      message: messages.rejectedRequest(teacher.name),
+      recipientId: userId,
     });
     return res.status(200).end();
   } catch (err) {
@@ -86,9 +100,14 @@ export async function acceptRequest(req, res) {
   if (!id) return res.status(400).send("id is required");
 
   try {
-    await queryUpdateRequest({
-      id,
-      status: "accepted",
+    await queryUpdateRequest({ id, status: "accepted" });
+    const [request] = await querySelectRequestById({ id });
+    const userId = request.sender_id;
+    const recipientId = request.recipient_id;
+    const [teacher] = await querySelectUserById(recipientId);
+    await queryInsertNotification({
+      message: messages.acceptedRequest(teacher.name),
+      recipientId: userId,
     });
     return res.status(200).end();
   } catch (err) {
