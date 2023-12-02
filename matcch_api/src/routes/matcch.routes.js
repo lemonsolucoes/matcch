@@ -9,10 +9,10 @@ import {
 
 const router = express.Router();
 
-router.get("/:userID", listRequestsBySender);
-router.get("/pending/:userID", listPendingRequestsToRecipient);
+router.get("/:userId", listRequestsBySender);
+router.get("/pending/:userId", listPendingRequestsToRecipient);
 router.post("/request", sendRequest);
-router.put("/accept", acceptRequest);
-router.put("/reject", rejectRequest);
+router.put("/accept/:id", acceptRequest);
+router.put("/reject/:id", rejectRequest);
 
 export default router;
