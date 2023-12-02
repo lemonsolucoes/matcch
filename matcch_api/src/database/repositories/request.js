@@ -14,6 +14,21 @@ export async function querySelectAllRequestsBySender(data) {
   return rows;
 }
 
+export async function querySelectAllPendingRequestsToRecipient(data) {
+  const { recipientId } = data;
+
+  const [rows] = await db.query(
+    `
+    SELECT * FROM REQUEST
+    WHERE recipient_id = ?
+    AND status = 'pending'
+    ORDER BY created_at DESC;
+	`,
+    [recipientId],
+  );
+  return rows;
+}
+
 export async function queryInsertRequest(data) {
   const { senderId, recipientId } = data;
 
