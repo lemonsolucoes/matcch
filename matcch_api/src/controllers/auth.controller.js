@@ -38,6 +38,10 @@ export async function login(req, res) {
 
   const user = await querySelectUserByEmail(email);
 
+  if (!user) {
+    return res.status(403).end();
+  }
+
   const password = {
     text: body.password,
     hash: user.hash,
