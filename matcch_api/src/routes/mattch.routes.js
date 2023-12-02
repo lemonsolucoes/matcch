@@ -3,14 +3,14 @@ import {
   sendRequest,
   acceptRequest,
   rejectRequest,
-  listPendingRequests,
+  listPendingRequestsToRecipient,
   listRequestsBySender,
-} from "#controllers/request.controller";
+} from "#controllers/request.controller.js";
 
 const router = express.Router();
 
 router.get("/:userID", listRequestsBySender);
-router.get("/pending/:userID", listPendingRequests);
+router.get("/pending/:userID", listPendingRequestsToRecipient);
 router.post("/request", sendRequest);
 router.put("/accept", acceptRequest);
 router.put("/reject", rejectRequest);
