@@ -66,9 +66,7 @@ function Navbar() {
                 <Link className="link" to="/orders">
                   Meu perfil
                 </Link>
-                <Link className="link" to="/messages">
-                  Mensagens
-                </Link>
+              
                 <Link className="link" to="/">
                   Logout
                 </Link>

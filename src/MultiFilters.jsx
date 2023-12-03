@@ -11,8 +11,8 @@ export default function MultiFilters() {
   const [filteredGigs, setFilteredGigs] = useState(gigs);
 
   let categoryFilters = ["Design", "Sistemas", "Jogos", "Audiovisual"];
-  let areaFilters = ["Realidade Virtual", "Educação", "Animação", "UX", "Cinema", "Ilustração"]; // Substitua com suas áreas reais
-  let modalidadeFilters = ["Monografia", "Artigo", "Relatorio Tecnico"];
+  let areaFilters = ["Realidade Virtual", "Educação", "Animação", "UX", "Cinema", "Ilustração", "Design Gráfico"]; // Substitua com suas áreas reais
+  let modalidadeFilters = ["Monografia", "Artigo", "Relatório Técnico"];
 
   const handleFilterButtonClick = (filter, filterType) => {
     if (filterType === "category") {
