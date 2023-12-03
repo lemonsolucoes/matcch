@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Gig.scss";
 import { gigs } from "../../data";
 
 function Gig() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [inputValue, setInputValue] = useState("");
+
+
   const gigData = gigs[0]; // Assuming you want to display data for the first gig, you can change this as needed
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // Adicione a lógica para lidar com o valor do input conforme necessário
+    console.log("Input Value:", inputValue);
+    // Feche o modal após a submissão (adicione lógica adicional conforme necessário)
+    closeModal();
+  };
 
   return (
     <div className="gig">
@@ -37,8 +61,41 @@ function Gig() {
                 </div>
               </div>
               <center>
-                <button>Solicitar Orientação para TCC</button>
+              <button onClick={openModal}>Solicitar Orientação para TCC</button>
               </center>
+
+
+
+              {isModalOpen && (
+            <div className="modal-overlay">
+            <div className="modal-content">
+            <div className="status">Envio de Solicitação</div>
+              <img src={gigData.pp} alt="" className="modal-image" />
+              <h2 className="modal-title">Deseja enviar solicitação de orientação para {gigData.username}?</h2>
+
+<textarea
+          placeholder="Escreva algo para o professor. Lembre-se de ser educado. Uma boa mensagem pode aumentar muito a sua chance de match!"
+          className="modal-input"
+        />
+
+
+          <div className="modal-buttons">
+          <button className="send-button">Enviar</button>
+          <button className="cancel-button" onClick={closeModal}>
+            Cancelar
+          </button>
+
+          
+        </div>
+                
+              </div>
+         
+
+              
+             
+            </div>
+          )}
+
             </div>
           </div>
         </div>
