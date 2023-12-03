@@ -56,19 +56,19 @@ function Navbar() {
                 {currentUser.isSeller && (
                   <>
                     <Link className="link" to="/mygigs">
-                      Página Inicial
+                    <i class="fa-sharp fa-solid fa-house"></i>  Página Inicial
                     </Link>
                     <Link className="link" to="/add">
-                      Minhas solicitações
+                    <i class="fa-sharp fa-solid fa-envelope"></i> Minhas solicitações
                     </Link>
                   </>
                 )}
                 <Link className="link" to="/orders">
-                  Meu perfil
+                <i class="fa-sharp fa-solid fa-user"></i>  Perfil
                 </Link>
               
                 <Link className="link" to="/">
-                  Logout
+                <i class="fa-sharp fa-solid fa-right-from-bracket"></i> Sair
                 </Link>
               </div>}
             </div>
