@@ -6,6 +6,13 @@
 .tcc {
   color: #DD7A96;
 }
+
+.containertags {
+  display: inline-flex;
+  margin: auto;
+  padding: 50px 0px;
+  gap: 15px; }
+
   .container {
     width:99%;
     padding: 50px 0px;
@@ -13,12 +20,7 @@
     flex-direction: column;
     gap: 15px;
 
-    .breadcrumbs {
-      font-weight: 300;
-      text-transform: uppercase;
-      font-size: 13px;
-      color: #555;
-    }
+ 
 
     h1 {
       font-size: 40px;

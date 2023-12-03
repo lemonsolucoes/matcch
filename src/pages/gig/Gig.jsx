@@ -53,12 +53,22 @@ function Gig() {
         <h1>Projetos orientados por Adriano:</h1>
           <div className="price">
             <h3>A beleza está no olho de quem vê: Um relato de experiência sobre a avaliação de estética de um design system para HUDs em jogos sérios EUD. 2023.</h3>
-          
           </div>
         
           <div className="details">
             <div className="item">
-              <img src="/img/clock.png" alt="" />
+              <img src="/img/user.png" alt="" />
+              <span>Autor: Mariana Bernardino Muri.</span>
+            </div>
+          </div>
+
+          <div className="price">
+            <h3>A beleza está no olho de quem vê: Um relato de experiência sobre a avaliação de estética de um design system para HUDs em jogos sérios EUD. 2023.</h3>
+          </div>
+        
+          <div className="details">
+            <div className="item">
+              <img src="/img/user.png" alt="" />
               <span>Autor: Mariana Bernardino Muri.</span>
             </div>
             

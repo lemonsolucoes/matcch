@@ -67,7 +67,8 @@ export default function MultiFilters() {
   return (
     <div>
       <div className="filter-buttons-container">
-      <p>Trilhas: </p>
+      <div className="filter-group">
+      <center> <p>Trilhas: </p></center>
         {categoryFilters.map((category, idx) => (
           <button
             onClick={() => handleFilterButtonClick(category, "category")}
@@ -79,7 +80,10 @@ export default function MultiFilters() {
             {category}
           </button>
         ))}
- <p>Áreas de interesse: </p>
+</div>
+
+<div className="filter-group">
+<center><p>Áreas de interesse: </p></center>
         {areaFilters.map((area, idx) => (
           <button
             onClick={() => handleFilterButtonClick(area, "area")}
@@ -91,8 +95,10 @@ export default function MultiFilters() {
             {area}
           </button>
         ))}
+ </div>
 
-<p>Modalidade: </p>
+ <div className="filter-group">
+<center><p>Modalidade: </p></center>
         {modalidadeFilters.map((modalidade, idx) => (
           <button
             onClick={() => handleFilterButtonClick(modalidade, "modalidade")}
@@ -104,6 +110,7 @@ export default function MultiFilters() {
             {modalidade}
           </button>
         ))}
+      </div>
       </div>
 
       <div className="cards">

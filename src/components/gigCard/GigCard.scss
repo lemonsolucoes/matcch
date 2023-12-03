@@ -27,6 +27,32 @@
     flex-direction: column;
     gap: 20px;
 
+
+     .rectangle-3 {
+      background-color: green;
+      border-radius: 17px 14px 0px 17px;
+      height: 37px;
+      left: 0;
+      position: absolute;
+      top: 3px;
+      width: 118px;
+    }
+    
+     .disponibildiade {
+      color: #ffffff;
+      font-family: "DM Sans", Helvetica;
+      font-size: 18px;
+      font-weight: 700;
+      height: 45px;
+      left: 15px;
+      letter-spacing: 0;
+      line-height: 21px;
+      position: absolute;
+      top: 0;
+      width: 95px;
+    }
+
+
     .user {
       display: flex;
       align-items: center;
