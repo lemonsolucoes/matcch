@@ -10,19 +10,26 @@ function Gig() {
       <div className="container">
         <div className="left">
           <div className="seller">
+            
+            <div className="box">
             <div className="user">
               <img src={gigData.pp} alt="" />
               <div className="info">
                 <span>{gigData.username}</span>
               </div>
             </div>
-            <div className="box">
-              <p>{gigData.desc}</p> 
+
+            <br></br>
+              <p>{gigData.longerdesc}</p> <br></br>
               <hr />
               <div className="items">
+              <div className="item">
+                  <span className="title">Trilha</span>
+                  <span className="desc">{gigData.category}</span>
+                </div>
                 <div className="item">
                   <span className="title">Áreas de Interesse</span>
-                  <span className="desc">{gigData.category}</span>
+                  <span className="desc">{gigData.area}</span>
                 </div>
                 <div className="item">
                   <span className="title">Preferência de modalidade de TCC:</span>

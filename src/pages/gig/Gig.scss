@@ -84,7 +84,7 @@
       }
 
       .seller {
-        margin-top: 50px;
+        margin-top: 0px;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -139,8 +139,8 @@
         .box {
           border: 1px solid lightgray;
           border-radius: 5px;
-          padding: 20px;
-          margin-top: 20px;
+          padding: 50px;
+         
 
           .items {
             display: flex;
@@ -148,7 +148,7 @@
             flex-wrap: wrap;
 
             .item {
-              width: 300px;
+              width: 92%;
               display: flex;
               flex-direction: column;
               gap: 10px;
@@ -156,6 +156,20 @@
 
               .title {
                 font-weight: 300;
+              }
+
+              .desc {
+                font-weight: 300;
+                color: white;
+                background-color: #DD7A96;
+                width: 100%;
+                border-radius: 10px;
+                padding: 15px 20px;
+                font-size:15px;
+                -webkit-box-shadow: 1px -1.5px 0 3px #daf88f;
+                -moz-box-shadow: 1px -1.5px 0 3px #daf88f;
+                box-shadow: 1px -1.5px 0 3px #daf88f;
+              
               }
 
             }
@@ -169,10 +183,17 @@
           }
 
           button {
-            background-color: white;
-            border-radius: 5px;
-            border: 1px solid gray;
-            padding: 10px;
+            background-color: #E99BA9;
+            font-weight: 700;
+            border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-right: 2px solid #000;
+    border-bottom: 3px solid #000;
+    margin: 5px 5px;
+    border-radius: 25px;
+    padding: 16px 34px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
           }
         }
       }
@@ -251,7 +272,7 @@
       height: max-content;
       max-height: 500px;
       position: sticky;
-      top: 150px;
+      top: 120px;
 
       .price {
         display: flex;
