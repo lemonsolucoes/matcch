@@ -3,24 +3,23 @@
   display: flex;
   justify-content: center;
 
-.tcc {
-  color: #DD7A96;
-}
+  .tcc {
+    color: #dd7a96;
+  }
 
-.containertags {
-  display: inline-flex;
-  margin: auto;
-  padding: 50px 0px;
-  gap: 15px; }
+  .containertags {
+    display: inline-flex;
+    margin: auto;
+    padding: 50px 0px;
+    gap: 15px;
+  }
 
   .container {
-    width:99%;
+    width: 99%;
     padding: 50px 0px;
     display: flex;
     flex-direction: column;
     gap: 15px;
-
- 
 
     h1 {
       font-size: 40px;
@@ -45,18 +44,18 @@
         color: #555;
         font-weight: 300;
 
-        input{
+        input {
           padding: 5px;
           border: 1px solid lightgrey;
           border-radius: 5px;
           outline: none;
 
-          &::placeholder{
+          &::placeholder {
             color: #999;
           }
         }
 
-        button{
+        button {
           padding: 5px 10px;
           background-color: #1dbf73;
           color: white;
@@ -65,10 +64,10 @@
           border-radius: 5px;
           cursor: pointer;
         }
-
       }
 
       .right {
+        background-color: white;
         position: relative;
         display: flex;
         align-items: center;

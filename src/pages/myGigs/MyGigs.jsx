@@ -19,6 +19,7 @@ function MyGigs() {
     category: "Design",
     area: "UX",
     modalidade: "Artigo",
+    orientador: "Ticianne",
     isSeller: true,
   };
 
@@ -90,39 +91,19 @@ function MyGigs() {
           </div>
         </div>
 
-        <div className="right">
-          <h1>Projetos orientados por {gigData?.username}:</h1>
-
+        <div className="direita">
+          <h2>Seu orientador:</h2>
           <div key={gigData?.id}>
-            <div className="price">
-              <h3>{gigData?.proj}</h3>
+            <div className="cardo">
+              <img
+                src={currentUser?.pp} // Substitua pelo caminho real da sua foto
+                alt="img"
+                className="cardo__imagem"
+              />
+              <h2 className="cardo__titulo">{currentUser?.orientador}</h2>
+              <label className="cardo__label">Trilha: Design</label>
             </div>
-            <div className="details">
-              <div className="item">
-                <i className="fa-sharp fa-solid fa-user"></i>
-                <span>Autor: {gigData?.projautor}</span>
-              </div>
-            </div>
-            <br></br>
-            <div className="price">
-              <h3>{gigData?.proj2}</h3>
-            </div>
-            <div className="details">
-              <div className="item">
-                <i className="fa-sharp fa-solid fa-user"></i>
-                <span>Autor: {gigData?.projautor2}</span>
-              </div>
-            </div>
-            <br></br>
-            <div className="price">
-              <h3>{gigData?.proj3}</h3>
-            </div>
-            <div className="details">
-              <div className="item">
-                <i className="fa-sharp fa-solid fa-user"></i>
-                <span>Autor: {gigData?.projautor3}</span>
-              </div>
-            </div>
+
             <br></br>
           </div>
         </div>
