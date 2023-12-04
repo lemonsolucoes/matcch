@@ -103,6 +103,7 @@ function Gig() {
         </div>
 
         <div className="right">
+          
           <h1>Projetos orientados por {gigData?.username}:</h1>
 
           <div key={gigData?.id}>
@@ -115,6 +116,27 @@ function Gig() {
                 <span>Autor: {gigData?.projautor}</span>
               </div>
             </div>
+            <br></br>
+            <div className="price">
+              <h3>{gigData?.proj2}</h3>
+            </div>
+            <div className="details">
+              <div className="item">
+                <i className="fa-sharp fa-solid fa-user"></i>
+                <span>Autor: {gigData?.projautor2}</span>
+              </div>
+            </div>
+            <br></br>
+            <div className="price">
+              <h3>{gigData?.proj3}</h3>
+            </div>
+            <div className="details">
+              <div className="item">
+                <i className="fa-sharp fa-solid fa-user"></i>
+                <span>Autor: {gigData?.projautor3}</span>
+              </div>
+            </div>
+            <br></br>
           </div>
         </div>
       </div>

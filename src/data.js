@@ -123,6 +123,12 @@ export const gigs = [
     modalidade: "Monografia",
     username: "Adriano Anunciação Oliveira",
     status: "Disponivel",
+    proj2:
+      "Criação de um software de Treinamento Médico utilizando Realidade Virtual.",
+    projautor2: "Igor dos Santos Machado",
+    proj3:
+      "Matrix e Cidade dos Sonhos: Representações da Irrealidade da Ficção Contemporânea.",
+    projautor3: "Décio Torres Cruz",
   },
   {
     id: 2,
@@ -138,6 +144,12 @@ export const gigs = [
     status: "Disponivel",
     proj: "Concepção de um Simulador para Treinamento Médico utilizando Realidade Virtual.",
     projautor: "Allan dos Santos Machado",
+    proj2:
+      "Criação de um software de Treinamento Médico utilizando Realidade Virtual.",
+    projautor2: "Igor dos Santos Machado",
+    proj3:
+      "Matrix e Cidade dos Sonhos: Representações da Irrealidade da Ficção Contemporânea.",
+    projautor3: "Décio Torres Cruz",
   },
   {
     id: 3,
@@ -153,6 +165,12 @@ export const gigs = [
     status: "Indisponivel",
     proj: "Concepção de um Simulador para Treinamento Médico utilizando Realidade Virtual.",
     projautor: "Léticia dos Santos Machado",
+    proj2:
+      "Criação de um software de Treinamento Médico utilizando Realidade Virtual.",
+    projautor2: "Igor dos Santos Machado",
+    proj3:
+      "Matrix e Cidade dos Sonhos: Representações da Irrealidade da Ficção Contemporânea.",
+    projautor3: "Décio Torres Cruz",
   },
   {
     id: 4,
@@ -168,6 +186,12 @@ export const gigs = [
     status: "Disponivel",
     proj: "Concepção de um Simulador para Treinamento Médico utilizando Realidade Virtual.",
     projautor: "Laisa dos Santos Machado",
+    proj2:
+      "Criação de um software de Treinamento Médico utilizando Realidade Virtual.",
+    projautor2: "Ana dos Santos Machado",
+    proj3:
+      "Matrix e Cidade dos Sonhos: Representações da Irrealidade da Ficção Contemporânea.",
+    projautor3: "Paula Torres Cruz",
   },
   {
     id: 5,
@@ -181,6 +205,12 @@ export const gigs = [
     status: "Disponivel",
     proj: "Concepção de um Simulador para Treinamento Médico utilizando Realidade Virtual.",
     projautor: "Exemplo dos Santos Machado",
+    proj2:
+      "Criação de um software de Treinamento Médico utilizando Realidade Virtual.",
+    projautor2: "Daniel dos Santos Machado",
+    proj3:
+      "Matrix e Cidade dos Sonhos: Representações da Irrealidade da Ficção Contemporânea.",
+    projautor3: "Pedro Torres Cruz",
   },
   {
     id: 6,
@@ -194,6 +224,12 @@ export const gigs = [
     status: "Indisponivel",
     proj: "Concepção de um Simulador para Treinamento Médico utilizando Realidade Virtual.",
     projautor: "Arthur dos Santos Machado",
+    proj2:
+      "Criação de um software de Treinamento Médico utilizando Realidade Virtual.",
+    projautor2: "José dos Santos Machado",
+    proj3:
+      "Matrix e Cidade dos Sonhos: Representações da Irrealidade da Ficção Contemporânea.",
+    projautor3: "Thiago Torres Cruz",
   },
   {
     id: 7,
@@ -207,6 +243,12 @@ export const gigs = [
     status: "Disponivel",
     proj: "Concepção de um Simulador para Treinamento Médico utilizando Realidade Virtual.",
     projautor: "Larissa dos Santos Machado",
+    proj2:
+      "Criação de um software de Treinamento Médico utilizando Realidade Virtual.",
+    projautor2: "Laura  dos Santos Machado",
+    proj3:
+      "Matrix e Cidade dos Sonhos: Representações da Irrealidade da Ficção Contemporânea.",
+    projautor3: "Júlia Torres Cruz",
   },
   {
     id: 8,
@@ -222,6 +264,12 @@ export const gigs = [
     status: "Disponivel",
     proj: "Concepção de um Simulador para Treinamento Médico utilizando Realidade Virtual.",
     projautor: "Thainara dos Santos Machado",
+    proj2:
+      "Criação de um software de Treinamento Médico utilizando Realidade Virtual.",
+    projautor2: "Maria dos Santos Machado",
+    proj3:
+      "Matrix e Cidade dos Sonhos: Representações da Irrealidade da Ficção Contemporânea.",
+    projautor3: "Yuri Torres Cruz",
   },
 
   {
@@ -236,5 +284,11 @@ export const gigs = [
     status: "Disponivel",
     proj: "Concepção de um Simulador para Treinamento Médico utilizando Realidade Virtual.",
     projautor: "Isabele dos Santos Machado",
+    proj2:
+      "Criação de um software de Treinamento Médico utilizando Realidade Virtual.",
+    projautor2: "Igor dos Santos Machado",
+    proj3:
+      "Matrix e Cidade dos Sonhos: Representações da Irrealidade da Ficção Contemporânea.",
+    projautor3: "Décio Torres Cruz",
   },
 ];
