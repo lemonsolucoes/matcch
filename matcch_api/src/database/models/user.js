@@ -7,6 +7,7 @@ db.query(
 		name VARCHAR(255) NOT NULL,
 		email VARCHAR(512) NOT NULL,
 		about TEXT NOT NULL,
+		avatar TEXT NOT NULL,
 		role VARCHAR(10) NOT NULL,
 		hash TEXT NOT NULL,
 		salt TEXT NOT NULL,

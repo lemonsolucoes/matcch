@@ -1,4 +1,4 @@
-import db from '#database/client.js';
+import db from "#database/client.js";
 
 db.query(
   `

@@ -8,7 +8,7 @@ export async function querySelectRecipientNotifications(data) {
     SELECT * FROM NOTIFICATION
     WHERE recipient_id = ?
     ORDER BY created_at DESC;
-	`,
+  `,
     [recipientId],
   );
   return rows;
@@ -22,7 +22,7 @@ export async function queryInsertNotification(data) {
     INSERT INTO NOTIFICATION
     (message, status, recipient_id)
     VALUES (?, 'pending', ?);
-	`,
+  `,
     [message, recipientId],
   );
   return rows;
@@ -33,10 +33,10 @@ export async function queryUpdateNotificationStatus(data) {
 
   const [rows] = await db.query(
     `
-		UPDATE NOTIFICATION
-		SET status = ?
-		WHERE id = ?;
-	`,
+    UPDATE NOTIFICATION
+    SET status = ?
+    WHERE id = ?;
+  `,
     [status, id],
   );
   return rows;
