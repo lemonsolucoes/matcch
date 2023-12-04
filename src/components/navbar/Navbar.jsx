@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "./Navbar.scss";
+import { gigs } from "../../data";
 
 function Navbar() {
   const [active, setActive] = useState(false);
@@ -73,7 +75,7 @@ function Navbar() {
                         <i className="fa-sharp fa-solid fa-house"></i> Página
                         Inicial
                       </Link>
-                      <Link className="link" to="/solicitacao">
+                      <Link className="link" to="/solicitacao/:id">
                         <i className="fa-sharp fa-solid fa-envelope"></i> Minhas
                         solicitações
                       </Link>

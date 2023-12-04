@@ -13,13 +13,15 @@ function MyGigs() {
     id: 1,
     semestre: "6°",
     pp: "https://images.pexels.com/photos/1115697/pexels-photo-1115697.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    pprof:
+      "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4231074D3",
     username: "Anna Ferreira",
     longerdesc:
       "Aluna do curso de SMD apaixonada por design e por sistemas. Quero desenvolver um TCC que seja um artigo ou um relatório técnico nas minhas áreas de interesse.",
     category: "Design",
     area: "UX",
     modalidade: "Artigo",
-    orientador: "Ticianne",
+    orientador: "Ticianne de Gois Ribeiro Darin",
     isSeller: true,
   };
 
@@ -96,7 +98,7 @@ function MyGigs() {
           <div key={gigData?.id}>
             <div className="cardo">
               <img
-                src={currentUser?.pp} // Substitua pelo caminho real da sua foto
+                src={currentUser?.pprof} // Substitua pelo caminho real da sua foto
                 alt="img"
                 className="cardo__imagem"
               />
