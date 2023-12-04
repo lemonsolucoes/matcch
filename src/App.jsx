@@ -39,7 +39,7 @@ function App() {
           element: <Gigs />,
         },
         {
-          path: "/myGigs",
+          path: "/perfilaluno",
           element: <MyGigs />,
         },
         {
@@ -55,7 +55,7 @@ function App() {
           element: <Message />,
         },
         {
-          path: "/add",
+          path: "/editarperfil",
           element: <Add />,
         },
         {
