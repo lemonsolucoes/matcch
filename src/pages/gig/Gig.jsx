@@ -103,7 +103,6 @@ function Gig() {
         </div>
 
         <div className="right">
-          
           <h1>Projetos orientados por {gigData?.username}:</h1>
 
           <div key={gigData?.id}>
@@ -164,7 +163,10 @@ const Switcher = () => {
         <span> É a sua primeira opção?</span>
       </label>
       <br></br>
-      <p>Este professor será sua {opcaoSelecionada}</p>
+      <p>
+        Este professor será sua{" "}
+        <span className="opcao">{opcaoSelecionada}</span>
+      </p>
     </div>
   );
 };
