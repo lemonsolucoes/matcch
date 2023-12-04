@@ -68,37 +68,8 @@ export default function MultiFilters() {
     <div>
       <div className="filter-buttons-container">
       <div className="filter-group">
-      <center> <p>Trilhas: </p></center>
-        {categoryFilters.map((category, idx) => (
-          <button
-            onClick={() => handleFilterButtonClick(category, "category")}
-            className={`filter-button ${
-              selectedCategoryFilters?.includes(category) ? "active" : ""
-            }`}
-            key={`category-filters-${idx}`}
-          >
-            {category}
-          </button>
-        ))}
-</div>
-
-<div className="filter-group">
-<center><p>Áreas de interesse: </p></center>
-        {areaFilters.map((area, idx) => (
-          <button
-            onClick={() => handleFilterButtonClick(area, "area")}
-            className={`filter-button ${
-              selectedAreaFilters?.includes(area) ? "active" : ""
-            }`}
-            key={`area-filters-${idx}`}
-          >
-            {area}
-          </button>
-        ))}
- </div>
-
- <div className="filter-group">
-<center><p>Modalidade: </p></center>
+      <p>Modalidade: </p>
+        <div className="modalidade">
         {modalidadeFilters.map((modalidade, idx) => (
           <button
             onClick={() => handleFilterButtonClick(modalidade, "modalidade")}
@@ -110,7 +81,43 @@ export default function MultiFilters() {
             {modalidade}
           </button>
         ))}
+        </div>
       </div>
+
+      <div className="filter-group">
+      <p>Trilhas: </p>
+      <div className="trilhas">
+        {categoryFilters.map((category, idx) => (
+          <button
+            onClick={() => handleFilterButtonClick(category, "category")}
+            className={`filter-button ${
+              selectedCategoryFilters?.includes(category) ? "active" : ""
+            }`}
+            key={`category-filters-${idx}`}
+          >
+            {category}
+          </button>
+        ))}
+        </div>
+</div>
+
+<div className="filter-group">
+<p>Áreas de interesse: </p>
+        <div className="areas">
+        {areaFilters.map((area, idx) => (
+          <button
+            onClick={() => handleFilterButtonClick(area, "area")}
+            className={`filter-button ${
+              selectedAreaFilters?.includes(area) ? "active" : ""
+            }`}
+            key={`area-filters-${idx}`}
+          >
+            {area}
+          </button>
+        ))}
+        </div>
+ </div>
+
       </div>
 
       <div className="cards">
