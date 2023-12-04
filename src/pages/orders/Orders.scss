@@ -110,19 +110,26 @@
         display: flex;
 
         .circular-button {
+          text-decoration: none;
+          align-items: center;
+          text-align: center;
           width: 95px;
-          height: 65px;
+          height: 55px;
           border-radius: 10px;
           background-color: #e99ba9;
-          margin-right: 10px;
           border: none;
           cursor: pointer;
+          color: #000;
           border-left: 1px solid #000;
           border-top: 1px solid #000;
           border-right: 2px solid #000;
           border-bottom: 3px solid #000;
           &:last-child {
             margin-right: 0;
+          }
+          &:link {
+            padding-top: 15px;
+            font-size: 14px;
           }
         }
       }

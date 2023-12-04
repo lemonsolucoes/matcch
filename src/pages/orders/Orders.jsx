@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Orders.scss";
 import { gigs } from "../../data";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const Orders = () => {
   const { id } = useParams();
@@ -35,18 +35,18 @@ const Orders = () => {
             <label>1° opção</label>
             <div className="subtitle">Gerenciar solicitação</div>
             <div className="buttons-container">
-              <button className="circular-button">
+              <Link to={`/gig/${id}`} className="circular-button">
                 <i className="fa-sharp fa-solid fa-user"></i>
                 <p>Perfil</p>
-              </button>
-              <button className="circular-button">
+              </Link>
+              <Link className="circular-button">
                 <i className="fa-sharp fa-solid fa-pen"></i>
                 <p>Editar</p>
-              </button>
-              <button className="circular-button">
+              </Link>
+              <Link className="circular-button">
                 <i className="fa-sharp fa-solid fa-trash"></i>
                 <p>Deletar</p>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
