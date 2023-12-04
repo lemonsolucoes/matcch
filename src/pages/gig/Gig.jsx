@@ -32,7 +32,7 @@ function Gig() {
   };
 
   const handleSubmit = () => {
-    navigate("/solicitacao");
+    navigate(`/solicitacao/${id}`);
   };
 
   return (
