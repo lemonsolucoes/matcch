@@ -84,11 +84,6 @@ function Navbar() {
                   <Link className="link" to="/perfilaluno">
                     <i className="fa-sharp fa-solid fa-user"></i> Perfil
                   </Link>
-
-                  <Link className="link" to="/">
-                    <i className="fa-sharp fa-solid fa-right-from-bracket"></i>{" "}
-                    Sair
-                  </Link>
                 </div>
               )}
             </div>
