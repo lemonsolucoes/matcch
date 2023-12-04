@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Gig.scss";
 import { gigs } from "../../data";
 import { useParams, useNavigate } from "react-router-dom";
+import { API } from "../../api";
 
 function Gig() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -31,7 +32,12 @@ function Gig() {
     closeModal();
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
+    const studentId = 17;
+    await API.makeRequestToTeacher({
+      senderId: studentId,
+      recipientId: id,
+    });
     navigate("/solicitacao");
   };
 
