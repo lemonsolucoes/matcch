@@ -68,7 +68,7 @@ export default function MultiFilters() {
     <div>
       <div className="filter-buttons-container">
       <div className="filter-group">
-      <p>Modalidade: </p>
+      <p className="title-filter">Modalidade: </p>
         <div className="modalidade">
         {modalidadeFilters.map((modalidade, idx) => (
           <button
@@ -85,7 +85,7 @@ export default function MultiFilters() {
       </div>
 
       <div className="filter-group">
-      <p>Trilhas: </p>
+      <p className="title-filter">Trilhas: </p>
       <div className="trilhas">
         {categoryFilters.map((category, idx) => (
           <button
@@ -102,7 +102,7 @@ export default function MultiFilters() {
 </div>
 
 <div className="filter-group">
-<p>Áreas de interesse: </p>
+<p className="title-filter">Áreas de interesse: </p>
         <div className="areas">
         {areaFilters.map((area, idx) => (
           <button
