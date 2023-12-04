@@ -8,11 +8,11 @@ const GigCard = ({ item }) => {
   const getStatusColor = () => {
     switch (item.status) {
       case "Disponivel":
-        return "#509B4A"; 
+        return "#42823d";
       case "Indisponivel":
-        return "#F25740"; 
+        return "#e44835";
       default:
-        return "gray"; 
+        return "gray";
     }
   };
 
@@ -21,7 +21,7 @@ const GigCard = ({ item }) => {
   };
 
   return (
-    <div   className="link">
+    <div className="link">
       <div className="gigCard" onClick={handleClick}>
         <div className="info">
           <div
@@ -35,7 +35,7 @@ const GigCard = ({ item }) => {
             <span>{item.username}</span>
           </div>
           <p>{item.desc}</p>
-    
+
           <span>Trilhas:</span>
           <p>{item.category}</p>
           <hr />
