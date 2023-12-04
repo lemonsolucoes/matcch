@@ -98,7 +98,7 @@ function MyGigs() {
           <div key={gigData?.id}>
             <div className="cardo">
               <img
-                src={currentUser?.pprof} // Substitua pelo caminho real da sua foto
+                src={currentUser?.pprof}
                 alt="img"
                 className="cardo__imagem"
               />
