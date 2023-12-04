@@ -27,7 +27,7 @@ const Messages = () => {
             Pendentes
           </h2>
           <h5>
-            <br></br>Você não solicitou nenhuma orientação ainda.
+            <br></br>Você ainda não solicitou nenhuma orientação..
           </h5>
         </div>
 
