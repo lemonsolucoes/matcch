@@ -30,13 +30,10 @@ function Gigs() {
     
 
         
-        <div className="App">
-       <center><p>
-          Filtre por:
-        </p></center>
+       <div className="App"> 
       <MultiFilters />
 
-    </div>
+   </div>
 
    
     
