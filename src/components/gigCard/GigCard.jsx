@@ -1,8 +1,10 @@
 import React from "react";
 import "./GigCard.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const GigCard = ({ item }) => {
+  const navigate = useNavigate();
+
   const getStatusColor = () => {
     switch (item.status) {
       case "Disponivel":
@@ -14,9 +16,13 @@ const GigCard = ({ item }) => {
     }
   };
 
+  const handleClick = () => {
+    navigate(`/gig/${item.id}`);
+  };
+
   return (
-    <Link to="/gig/123" className="link">
-      <div className="gigCard">
+    <div   className="link">
+      <div className="gigCard" onClick={handleClick}>
         <div className="info">
           <div
             className="statuscolor"
@@ -40,7 +46,7 @@ const GigCard = ({ item }) => {
           <p>{item.modalidade}</p>
         </div>
       </div>
-    </Link>
+    </div>
   );
 };
 

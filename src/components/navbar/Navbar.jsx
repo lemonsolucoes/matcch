@@ -55,15 +55,15 @@ function Navbar() {
               {open && <div className="options">
                 {currentUser.isSeller && (
                   <>
-                    <Link className="link" to="/mygigs">
+                    <Link className="link" to="/">
                     <i class="fa-sharp fa-solid fa-house"></i>  Página Inicial
                     </Link>
-                    <Link className="link" to="/add">
+                    <Link className="link" to="/solicitacao">
                     <i class="fa-sharp fa-solid fa-envelope"></i> Minhas solicitações
                     </Link>
                   </>
                 )}
-                <Link className="link" to="/orders">
+                <Link className="link" to="/add">
                 <i class="fa-sharp fa-solid fa-user"></i>  Perfil
                 </Link>
               

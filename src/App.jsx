@@ -43,7 +43,7 @@ function App() {
           element: <MyGigs />,
         },
         {
-          path: "/orders",
+          path: "/solicitacao",
           element: <Orders />,
         },
         {

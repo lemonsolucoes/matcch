@@ -114,9 +114,9 @@ export default function MultiFilters() {
       </div>
 
       <div className="cards">
-        {filteredGigs.map((gig) => (
-          <GigCard key={gig.id} item={gig} />
-        ))}
+        {filteredGigs.map((gig) => 
+            <GigCard key={gig.id} item={gig}/>
+          )}
       </div>
     </div>
   );
