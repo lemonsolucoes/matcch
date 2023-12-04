@@ -1,0 +1,79 @@
+.card {
+	border-radius: 8px;
+	padding: 20px;
+	width: 340px;
+	margin: 20px;
+	border-left: 1px solid #000;
+	border-top: 1px solid #000;
+	border-right: 2px solid #000;
+	border-bottom: 3px solid #000;
+
+	.header {
+		display: flex;
+		align-items: center;
+		img {
+			width: 90px;
+			height: 60px;
+			object-fit: cover;
+			margin-right: 10px;
+			border-radius: 100%;
+			-webkit-box-shadow: 1px -1.5px 0 3px #daf88f;
+			-moz-box-shadow: 1px -1.5px 0 3px #daf88f;
+			box-shadow: 1px -1.5px 0 3px #daf88f;
+		}
+		h3 {
+			font-size: 17px;
+			line-height: normal;
+			font-weight: 600;
+			margin-top: -15px;
+			color: #000;
+		}
+	}
+
+	label {
+		margin-top: -15px;
+		margin-left: 67px;
+		background-color: #dd7a96;
+		-webkit-box-shadow: 1px -1.5px 0 3px #daf88f;
+		-moz-box-shadow: 1px -1.5px 0 3px #daf88f;
+		box-shadow: 1px -1.5px 0 3px #daf88f;
+		padding-left: 8px;
+		padding-right: 8px;
+		padding-bottom: 4px;
+		padding-top: 4px;
+		font-size: 12px;
+		border-radius: 8px;
+		color: #000;
+		font-weight: 600;
+	}
+
+	.subtitle {
+		margin-top: 20px;
+		font-weight: 600;
+		text-align: left;
+		color: #000;
+	}
+
+	.buttons-container {
+		margin-top: 15px;
+		justify-content: space-between;
+		display: flex;
+
+		.circular-button {
+			width: 95px;
+			height: 65px;
+			border-radius: 10px;
+			background-color: #e99ba9;
+			margin-right: 10px;
+			border: none;
+			cursor: pointer;
+			border-left: 1px solid #000;
+			border-top: 1px solid #000;
+			border-right: 2px solid #000;
+			border-bottom: 3px solid #000;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
