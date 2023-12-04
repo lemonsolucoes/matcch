@@ -1,81 +1,45 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Messages.scss";
+import { gigs } from "../../data";
+import { useParams, useNavigate } from "react-router-dom";
 
 const Messages = () => {
+  const { id } = useParams();
+
   const currentUser = {
     id: 1,
     username: "Anna",
     isSeller: true,
   };
 
-  const message = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-  maxime cum corporis esse aspernatur laborum dolorum? Animi
-  molestias aliquam, cum nesciunt, aut, ut quam vitae saepe repellat
-  nobis praesentium placeat.`;
+  const gig = gigs[id - 1];
 
   return (
-    <div className="messages">
+    <div className="orders">
       <div className="container">
         <div className="title">
-          <h1>Messages</h1>
+          <h1>Minhas solicitações</h1>
         </div>
-        <table>
-          <tr>
-            <th>{currentUser.isSeller ? "Buyer" : "Seller"}</th>
-            <th>Last Message</th>
-            <th>Date</th>
-            <th>Action</th>
-          </tr>
-          <tr className="active">
-            <td>Charley Sharp</td>
-            <td>
-              <Link to="/message/123" className="link">
-                {message.substring(0, 100)}...
-              </Link>
-            </td>
-            <td>1 hour ago</td>
-            <td>
-              <button>Mark as Read</button>
-            </td>
-          </tr>
-          <tr className="active">
-            <td>John Doe</td>
+        <div className="box">
+          <h2>
+            <i className="fa-sharp fa-solid fa-clock"></i> Solicitações
+            Pendentes
+          </h2>
+          <h5>
+            <br></br>Você não solicitou nenhuma orientação ainda.
+          </h5>
+        </div>
 
-            <td>
-              <Link to="/message/123" className="link">
-                {message.substring(0, 100)}...
-              </Link>
-            </td>
-            <td>2 hours ago</td>
-            <td>
-              <button>Mark as Read</button>
-            </td>
-          </tr>
-          <tr>
-            <td>Elinor Good</td>
-            <td>
-              <Link to="/message/123" className="link">
-                {message.substring(0, 100)}...
-              </Link>
-            </td>
-            <td>1 day ago</td>
-          </tr>
-          <tr>
-            <td>Garner David </td>
-            <td>
-              <Link to="/message/123" className="link">
-                {message.substring(0, 100)}...
-              </Link>
-            </td>
-            <td>2 days ago</td>
-          </tr>
-          <tr>
-            <td>Troy Oliver</td>
-            <td>{message.substring(0, 100)}</td>
-            <td>1 week ago</td>
-          </tr>
-        </table>
+        <div className="box">
+          <h4>
+            <i className="fa-sharp fa-solid fa-circle-xmark"></i> Solicitações
+            Recusadas
+          </h4>
+          <h5>
+            <br></br>Sorria, você ainda não teve nenhuma solicitação recusada!
+          </h5>
+        </div>
       </div>
     </div>
   );

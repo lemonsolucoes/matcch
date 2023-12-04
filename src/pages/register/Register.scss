@@ -1,0 +1,184 @@
+.orders {
+    display: flex;
+    justify-content: center;
+    color: #555;
+  
+    .container {
+      width: 95%;
+      padding: 50px 0px;
+  
+      .box {
+        background-color: #fff;
+        margin-top: 30px;
+        border-left: 1px solid #000;
+        border-top: 1px solid #000;
+        border-right: 2px solid #000;
+        border-bottom: 3px solid #000;
+        border-radius: 10px;
+  
+        h2 {
+          text-align: center;
+          background-color: #7d7d7d;
+          color: white;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          font-size: 20px;
+          font-weight: 600;
+          border-radius: 9px 9px 0 0;
+        }
+  
+        h4 {
+          text-align: center;
+          background-color: #f46d59;
+          color: white;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          font-size: 20px;
+          font-weight: 600;
+          border-radius: 9px 9px 0 0;
+        }
+  
+        h5 {
+          text-align: center;
+          color: black;
+          padding-top: 8px;
+          padding-bottom: 30px;
+          font-size: 17px;
+          font-weight: 500;
+        }
+      }
+  
+      .card {
+        border-radius: 8px;
+        padding: 20px;
+        width: 340px;
+        margin: 20px;
+        border-left: 1px solid #000;
+        border-top: 1px solid #000;
+        border-right: 2px solid #000;
+        border-bottom: 3px solid #000;
+  
+        .header {
+          display: flex;
+          align-items: center;
+          img {
+            width: 90px;
+            height: 60px;
+            object-fit: cover;
+            margin-right: 10px;
+            border-radius: 100%;
+            -webkit-box-shadow: 1px -1.5px 0 3px #daf88f;
+            -moz-box-shadow: 1px -1.5px 0 3px #daf88f;
+            box-shadow: 1px -1.5px 0 3px #daf88f;
+          }
+          h3 {
+            font-size: 17px;
+            line-height: normal;
+            font-weight: 600;
+            margin-top: -15px;
+            color: #000;
+          }
+        }
+  
+        label {
+          margin-top: -15px;
+          margin-left: 67px;
+          background-color: #dd7a96;
+          -webkit-box-shadow: 1px -1.5px 0 3px #daf88f;
+          -moz-box-shadow: 1px -1.5px 0 3px #daf88f;
+          box-shadow: 1px -1.5px 0 3px #daf88f;
+          padding-left: 8px;
+          padding-right: 8px;
+          padding-bottom: 4px;
+          padding-top: 4px;
+          font-size: 12px;
+          border-radius: 8px;
+          color: #000;
+          font-weight: 600;
+        }
+  
+        .subtitle {
+          margin-top: 20px;
+          font-weight: 600;
+          text-align: left;
+          color: #000;
+        }
+  
+        .buttons-container {
+          margin-top: 15px;
+          justify-content: space-between;
+          display: flex;
+  
+          .circular-button {
+            text-decoration: none;
+            align-items: center;
+            text-align: center;
+            width: 95px;
+            height: 55px;
+            border-radius: 10px;
+            background-color: #e99ba9;
+            border: none;
+            cursor: pointer;
+            color: #000;
+            border-left: 1px solid #000;
+            border-top: 1px solid #000;
+            border-right: 2px solid #000;
+            border-bottom: 3px solid #000;
+            &:last-child {
+              margin-right: 0;
+            }
+            &:link {
+              padding-top: 15px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+  
+      .title {
+        display: flex;
+        justify-content: space-between;
+        color: #000;
+  
+        button {
+          background-color: #1dbf73;
+          color: white;
+          font-weight: 500;
+          border: none;
+          padding: 10px;
+          cursor: pointer;
+        }
+      }
+  
+      table {
+        width: 100%;
+  
+        tr {
+          height: 50px;
+          th {
+            text-align: left;
+          }
+          td {
+            sup {
+              font-size: 12px;
+            }
+  
+            .image {
+              width: 50px;
+              height: 25px;
+              object-fit: cover;
+            }
+  
+            .message {
+              width: 25px;
+              cursor: pointer;
+            }
+          }
+          &:nth-child(even) {
+            background-color: #1dbf730f;
+          }
+        }
+      }
+    }
+  }
+  

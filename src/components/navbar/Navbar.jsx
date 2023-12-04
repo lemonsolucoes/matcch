@@ -75,7 +75,7 @@ function Navbar() {
                         <i className="fa-sharp fa-solid fa-house"></i> Página
                         Inicial
                       </Link>
-                      <Link className="link" to="/solicitacao/:id">
+                      <Link className="link" to="/solicitacao">
                         <i className="fa-sharp fa-solid fa-envelope"></i> Minhas
                         solicitações
                       </Link>
