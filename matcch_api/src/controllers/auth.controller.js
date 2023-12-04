@@ -15,6 +15,7 @@ export async function register(req, res) {
   const user = {
     name: body.name,
     email: body.email,
+    avatar: body.avatar,
     about: body.about,
     role: body.role,
     ...genPassword(body.password),

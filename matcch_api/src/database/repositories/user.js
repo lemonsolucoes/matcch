@@ -18,14 +18,14 @@ export async function querySelectAllUsers() {
 }
 
 export async function queryInsertUser(data) {
-  const { name, email, about, role, hash, salt } = data;
+  const { name, email, avatar, about, role, hash, salt } = data;
 
   await db.query(
     `
-		INSERT INTO USER (name, email, about, role, hash, salt)
-		VALUES (?,?,?,?,?,?);
+		INSERT INTO USER (name, email, avatar, about, role, hash, salt)
+		VALUES (?,?,?,?,?,?,?);
 	`,
-    [name, email, about, role, hash, salt],
+    [name, email, avatar, about, role, hash, salt],
   );
 }
 
